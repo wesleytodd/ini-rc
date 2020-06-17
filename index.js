@@ -101,6 +101,7 @@ function _processOpts (_name, _opts, _cb) {
     cb = opts
     opts = {}
   }
+  opts = { ...opts }
 
   opts.name = opts.name || _name
   if (typeof opts.name !== 'string') {
